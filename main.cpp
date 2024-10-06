@@ -10,7 +10,8 @@ public:
 
     Entity(int x, int y)
     {
-        this->x = x; // To clean it up we can really write it like this as the previous code showed how "this" worked
+        this->x = x;   // To clean it up we can really write it like this as the previous code showed how "this" worked
+        (*this).x = x; // Alternatively you can cast "this" to a pointer and call assign x this way, but it isn't as clean as dereferencing with the arrow
     }
 };
 
