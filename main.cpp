@@ -16,6 +16,8 @@ public:
         this->x = x; // To clean it up we can really write it like this as the previous code showed how "this" worked
         //(*this).x = x; // Alternatively you can cast "this" to a pointer and call assign x this way, but it isn't as clean as dereferencing with the arrow
         this->y = y;
+
+        PrintEntity(this); // If we want to call the print function and use the current object instance, we can just use "this" here
     }
 
     // Example function to return one of the variables
