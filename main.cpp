@@ -10,7 +10,9 @@ public:
 
     Entity(int x, int y)
     {
-        x = x; // Currently we are just assigning the x in the parameters here
+        Entity *e = this; // This is an example of how the "this" keyword actually works, showing it is just a pointer to the object instance
+
+        x = x; // Currently we are just assigning the x in the parameters here with its own value
     }
 };
 
