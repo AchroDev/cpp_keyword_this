@@ -3,6 +3,9 @@
 
 // The "this" keyword is a pointer to the current object instance that the method belongs to.
 
+// Declaring example PrintEntity function
+void PrintEntity(Entity *e);
+
 class Entity
 {
 public:
@@ -24,6 +27,12 @@ public:
         return x;
     }
 };
+
+// Defining the PrintEntity fuction
+void PrintEntity(Entity *e)
+{
+    // Print
+}
 
 int main()
 {
