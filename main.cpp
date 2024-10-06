@@ -18,8 +18,8 @@ public:
     // Example function to return one of the variables
     int GetX() const
     {
-        Entity *e = this; // In a const function like this one, "this" actually has to be a const as well
-        e->x = 3;         // With Entity e not being a const, the compiler would allow you to modify a variable you shouldn't be modifying
+        const Entity *e = this; // In a const function like this one, "this" actually has to be a const as well
+        e->x = 3;               // Now that Entity e is a const, the compiler WILL NOT allow us to modify the variable, as we shouldn't anyway.
 
         return x;
     }
